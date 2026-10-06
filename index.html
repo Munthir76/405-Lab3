@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 3</title>
+  <style>
+    .image-preview img {
+      border-width: 30px;
+      border-style: solid;
+      border-color: skyblue lightpink lightgreen #ffefd5;
+    }
+
+    p > span { color: red; }
+    #header span { color: pink; }
+    span { color: green; }
+    #header *:last-child { color: orange; }
+    #header span:first-child:hover { color: blue; }
+
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-preview">
+    <img src="https://cpit405.gitlab.io/images/KAU_logo.png" alt="KAU Logo">
+  </div>
+
+  <hr>
+
+  <div id="header">
+    <span class="myclass1">Every</span>
+    <span class="myclass2">one can</span>
+    <span class="myclass3">success.</span>
+  </div>
+  <p>One machine can do the work of fifty ordinary men.
+    <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Property / State</th>
+        <th>span.myclass1</th>
+        <th>span.myclass2</th>
+        <th>span.myclass3</th>
+        <th>span.myclass4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>color</strong></td>
+        <td>pink</td>
+        <td>pink</td>
+        <td>orange</td>
+        <td>red</td>
+      </tr>
+      <tr>
+        <td><strong>color when mouse over</strong></td>
+        <td>blue</td>
+        <td>pink</td>
+        <td>orange</td>
+        <td>red</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
